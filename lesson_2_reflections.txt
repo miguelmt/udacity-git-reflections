@@ -33,6 +33,11 @@ be a good idea...
 
 How do the diagrams help you visualize the branch structure?
 
+By showing the parent-child relationship between commits, i.e. the evolution
+(or history, if you will) of the software. And also how, when and why different
+versions (branches) of the software were created.
+
+
 What is the result of merging two branches together? Why do we represent it in
 the diagram the way we do?
 
