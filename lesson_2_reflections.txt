@@ -1,55 +1,55 @@
-What happens when you initialize a repository? Why do you need to do it?
+Q: What happens when you initialize a repository? Why do you need to do it?
 
-Git gets everything ready to have that directory to behave as a repository.
+A: Git gets everything ready to have that directory to behave as a repository.
 If I didn't do it, then there would be nothing to support the file versions
 in the repository; there would only be a regular directory.
 
 
-How is the staging area different from the working directory and the repository?
+Q: How is the staging area different from the working directory and the repository?
 What value do you think it offers?
 
-It is different because the files there can be different to the files in the
+A: It is different because the files there can be different to the files in the
 working directory and in the repository.
 It makes sense because it makes it possible to pack all the files that make up
 a meaningful change together. I can think of other ways/abstractions to do that
 but they are all more cumbersome.
 
 
-How can you use the staging area to make sure you have one commit per logical
+Q:How can you use the staging area to make sure you have one commit per logical
 change?
 
-By looking at which files are in the staging area with git status, and
+A: By looking at which files are in the staging area with git status, and
 checking if the changes are those I meant to make with git diff --staged.
 
 
-What are some situations when branches would be helpful in keeping your history
+Q: What are some situations when branches would be helpful in keeping your history
 organized? How would branches help?
 
-Whenever I need to change something without impacting the main (master?)
+A: Whenever I need to change something without impacting the main (master?)
 version of the code, e.g. while I develop a new feature and it's not ready
 yet, while I fix a complex bug, while I try something which may or may not
 be a good idea...
 
 
-How do the diagrams help you visualize the branch structure?
+Q: How do the diagrams help you visualize the branch structure?
 
-By showing the parent-child relationship between commits, i.e. the evolution
+A: By showing the parent-child relationship between commits, i.e. the evolution
 (or history, if you will) of the software. And also how, when and why different
 versions (branches) of the software were created.
 
 
-What is the result of merging two branches together? Why do we represent it in
+Q: What is the result of merging two branches together? Why do we represent it in
 the diagram the way we do?
 
-We get changes from two different tracks (or two different sets of changes)
+A: We get changes from two different tracks (or two different sets of changes)
 into a single branch. This way we have all the fixes --or all of the new
 features-- together: the latest and greatest version of our code.
 
 
-What are the pros and cons of Git’s automatic merging vs. always doing merges
+Q: What are the pros and cons of Git’s automatic merging vs. always doing merges
 manually?
 
-Automatic merging can save a lot of time, as the coders won't have to look
+A: Automatic merging can save a lot of time, as the coders won't have to look
 through every single difference between the confilicting files to try to
 figure out what to keep. Automatic merging is a time saver. On the other hand,
 automatic merges seem to operate at the text level, with no understanding of
