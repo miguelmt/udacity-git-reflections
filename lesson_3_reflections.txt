@@ -9,7 +9,10 @@ purposes (you know the 3-2-1 rule: 3 backups, 2 different kinds of media,
 Q: Why might you want to always pull changes manually rather than having Git
 automatically stay up-to-date with your remote repository?
 
-A: 
+A: Same reason as why I would like to have manual commits: control. The moment
+something is in GitHub, it is there for your colleagues to see... and you may
+not want that to happen; you might want to wait until you have something
+worth showing... or something that works.
 
 
 Q: Describe the differences between forks, clones, and branches.  When would you
