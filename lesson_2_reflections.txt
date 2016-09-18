@@ -45,5 +45,16 @@ We get changes from two different tracks (or two different sets of changes)
 into a single branch. This way we have all the fixes --or all of the new
 features-- together: the latest and greatest version of our code.
 
+
 What are the pros and cons of Git’s automatic merging vs. always doing merges
 manually?
+
+Automatic merging can save a lot of time, as the coders won't have to look
+through every single difference between the confilicting files to try to
+figure out what to keep. Automatic merging is a time saver. On the other hand,
+automatic merges seem to operate at the text level, with no understanding of
+the underlying code structure. This means that, if the differences are
+complex, automatic merge could end up making quite a fine mess out of the
+code it merged. That's why merging often (so that the changes are small and
+easy to pinpoint) and automatic testing (unit tests, function tests...) are
+key to detect problems early.
