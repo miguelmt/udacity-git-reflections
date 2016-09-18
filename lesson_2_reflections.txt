@@ -41,5 +41,9 @@ versions (branches) of the software were created.
 What is the result of merging two branches together? Why do we represent it in
 the diagram the way we do?
 
+We get changes from two different tracks (or two different sets of changes)
+into a single branch. This way we have all the fixes --or all of the new
+features-- together: the latest and greatest version of our code.
+
 What are the pros and cons of Git’s automatic merging vs. always doing merges
 manually?
