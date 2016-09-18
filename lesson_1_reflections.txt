@@ -1,27 +1,27 @@
-How did viewing a diff between two versions of a file help you see the bug that
+Q: How did viewing a diff between two versions of a file help you see the bug that
 was introduced?
 
-If the old version worked and this one doesn't, it must be because something
+A: If the old version worked and this one doesn't, it must be because something
 I changed broke the program. It stands to reason that by looking at what's
 different *and its context*, i.e. the code around it and related to it, I'll
 be able to figure out what's wrong much faster than if I had to go through
 the new version of the file, line by line.
 
 
-How could having easy access to the entire history of a file make you a more
+Q: How could having easy access to the entire history of a file make you a more
 efficient programmer in the long term?
 
-Being able to go back in time is an invaluable tool to know where you messed
+A: Being able to go back in time is an invaluable tool to know where you messed
 up, but also to understand how your code came to be the way it is. Comments
 help here, too, but sometimes it is better to see how code evolved, even
 more so if you bother to write good comments (info?) in the commits.
 
 
-What do you think are the pros and cons of manually choosing when to create a
+Q: What do you think are the pros and cons of manually choosing when to create a
 commit, like you do in Git, vs having versions automatically saved, like Google
 docs does?
 
-I am not sure that automatic saving makes a lot of sense for any kind of
+A: I am not sure that automatic saving makes a lot of sense for any kind of
 document but it sure does not make sense for code. Anything other than saving
 at meaningful milestones will result into half-baked code that will probably
 not even compile... and a non-compiling save is pretty much a useless save.
@@ -29,10 +29,10 @@ Only you know when it makes sense to save a file, when you have reached
 a milestone of some sort.
 
 
-Why do you think some version control systems, like Git, allow saving multiple
+Q: Why do you think some version control systems, like Git, allow saving multiple
 files in one commit, while others, like Google Docs, treat each file separately?
 
-Because, more often than not, Google Docs documents can stand on their own,
+A: Because, more often than not, Google Docs documents can stand on their own,
 i.e. they are (mostly) unrelated to other documents in Google Docs, and this
 is not usually the case in software, where there are lots of dependencies
 among files, and changes to one file might not make any sense at all unless
@@ -41,25 +41,25 @@ public method to a .cpp file is no good unless you add the method declaration
 to the corresponding hpp file.
 
 
-How can you use the commands git log and git diff to view the history of files?
+Q: How can you use the commands git log and git diff to view the history of files?
 
-Plain git log doesn't help a lot, but git log --stat offers a litte more
+A: Plain git log doesn't help a lot, but git log --stat offers a litte more
 detail on what changed in the commits, including which files were changed
 and how much. Once you have located the commit (or the commits) you are
 interested in, you can just check what's different by running git diff
 <version 1> <version 2>.
 
 
-How might using version control make you more confident to make changes that
+Q: How might using version control make you more confident to make changes that
 could break something?
 
-If you know that you can easily take back any change, and have a working
+A: If you know that you can easily take back any change, and have a working
 version of the software again, the cost of taking risks is low, and you'll
 feel more comfortable taking risks, and changing stuff to see what happens.
 
 
-Now that you have your workspace set up, what do you want to try using Git for?
+Q: Now that you have your workspace set up, what do you want to try using Git for?
 
-My own coding projects. I might use it for some writing projects, too...
+A: My own coding projects. I might use it for some writing projects, too...
 but I don't think that going back is so important for text. I might change
 my opinion about this, though.
