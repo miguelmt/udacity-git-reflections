@@ -18,7 +18,18 @@ worth showing... or something that works.
 Q: Describe the differences between forks, clones, and branches.  When would you
 use one instead of another?
 
-A: 
+A: Forks: to get your own copy of somebody else's repository while giving (some
+amount of) credit and keeping some kind of link to the original repository.
+Apparently, this link makes it easier to suggest changes to the original repo,
+should you want to do so.
+Clones: you get your own copy of somebody else's repository. There is a strong
+link between the original and the clone, as the original is (at least by default)
+the origin of the clone, which makes a clone the best way to collaborate...
+but you may not have premission to collaboarate.
+Branches: this is actually working on the same repository where the owner of
+the original codebase works and (I guess) being able to push stuff as if it
+were yours. This requires a high level of trust and coordination, the kind of
+coordination that you can (only?) get among members of the same team.
 
 
 Q: What is the benefit of having a copy of the last known state of the remote
